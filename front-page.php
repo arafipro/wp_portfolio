@@ -1,104 +1,9 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- SEO対策 -->
-    <meta
-      content="ポートフォリオサイトをご覧いただきありがとうございます。はじめまして、Hiroki Chiyodaと申します。 私は株式投資をきっかけにプログラミングを勉強しています。まずは取引データの管理に役立つと思いPHPとMySQLを学びました。 その後、Web開発を本格的に学ぶためにLaravelやHTML、CSSを学びました。 またPythonやFlutterにも興味を持ち自己学習を続けています。自分が学んだことをアウトプットすることが大切だと考え、Webアプリやスマートフォンアプリを開発してきました。"
-      name="description"
-    />
-    <meta
-      property="og:title"
-      content="Wellcome to My Portfolio - Hiroki Chiyodaのポートフォリオサイトにようこそ"
-    />
-    <meta
-      property="og:description"
-      content="ポートフォリオサイトをご覧いただきありがとうございます。はじめまして、Hiroki Chiyodaと申します。 私は株式投資をきっかけにプログラミングを勉強しています。"
-    />
-    <meta property="og:type" content="ページの種類" />
-    <meta property="og:url" content="https://portfolio.arafipro.com/" />
-    <!-- <meta property="og:image" content="サムネイル画像の URL" /> -->
-    <meta
-      property="og:site_name"
-      content="Wellcome to My Portfolio - Hiroki Chiyodaのポートフォリオサイトにようこそ"
-    />
-    <meta property="og:locale" content="ja_JP" />
-    <meta
-      name="keywords"
-      content="streamlit,ポートフォリオ,html,css,sass,wordpress,ts,react,nextjs,vue,tailwind,python,django,php,laravel,dart,flutter,git,github,vscode,figma,mysql,sqlite"
-    />
-    <!-- SEO対策 終了-->
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <title>ARAFIPRO</title>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-TG1DR49E5G"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-TG1DR49E5G");
-    </script>
-  </head>
-  <body>
-    <div id="scroll"></div>
-    <!-- 固定ヘッダー -->
-    <header id="header" class="header_top">
-      <div id="header_main">
-        <h1>
-          <a href="#">
-            <img src="images/logo_black.png" alt="" />
-          </a>
-        </h1>
-        <nav>
-          <ul id="nav_menu">
-            <li><a href="#" class="nav_link">Home</a></li>
-            <li><a href="#about" class="nav_link">About</a></li>
-            <li><a href="#skills" class="nav_link">Skills</a></li>
-            <li>
-              <a href="#products" class="nav_link">Products</a>
-              <!-- サブメニュー
-              <div class="sub_menu">
-                <ul>
-                  <li><a href="#hp">ホームページ</a></li>
-                  <li><a href="#webapp">Webアプリ</a></li>
-                  <li><a href="#spapp">スマートフォンアプリ</a></li>
-                </ul>
-              </div> -->
-            </li>
-            <li><a href="#contact" class="nav_link">Contact</a></li>
-            <!-- <li><a href="#news" class="nav_link">News</a></li> -->
-          </ul>
-        </nav>
-        <div class="nav_icon">
-          <i class="ri-menu-line" id="menu_icon"></i>
-          <i class="ri-close-line" id="close_icon"></i>
-        </div>
-      </div>
-      <div class="header_content">
-        <img src="/images/human.png" alt="" />
-        <p>
-          <span>Wellcome to My Portfolio</span>
-          <br />
-          Hiroki Chiyodaのポートフォリオサイトにようこそ
-        </p>
-      </div>
-    </header>
-    <main>
+<?php get_header();?>
+<main>
       <section id="about" class="about jump_point">
         <h2>About</h2>
         <div>
-          <img src="/images/human.png" alt="" />
+          <img src="<?php bloginfo("template_url");?>/images/human.png" alt="" />
           <p>
             ポートフォリオサイトをご覧いただきありがとうございます。<br />
             はじめまして、Hiroki Chiyodaと申します。
@@ -168,7 +73,7 @@
               <h4>当ポートフォリオサイト</h4>
               <h5>HTML CSS SASS JavaScript</h5>
               <div class="img">
-                <img src="images/ss-portfolio.jpg" alt="" />
+                <img src="<?php bloginfo("template_url");?>/images/ss-portfolio.jpg" alt="" />
               </div>
             </a>
           </div>
@@ -178,7 +83,7 @@
               <h4>ひとこと投資メモを紹介するLPサイト</h4>
               <h5>HTML CSS</h5>
               <div class="img">
-                <img src="images/ss-jpstockminimemoLP.jpg" alt="" />
+                <img src="<?php bloginfo("template_url");?>/images/ss-jpstockminimemoLP.jpg" alt="" />
               </div>
             </a>
           </div>
@@ -188,7 +93,7 @@
               <h4>ひとこと投資メモを紹介するLPサイト</h4>
               <h5>HTML CSS</h5>
               <div class="img">
-                <img src="images/ss-usstockminimemoLP.jpg" alt="" />
+                <img src="<?php bloginfo("template_url");?>/images/ss-usstockminimemoLP.jpg" alt="" />
               </div>
             </a>
           </div>
@@ -198,7 +103,7 @@
               <h4>Figmaのデザインカンプから<br />コーディングのサンプル</h4>
               <h5>HTML CSS SASS Figma</h5>
               <div class="img">
-                <img src="images/ss-amanda-demo.jpg" alt="" />
+                <img src="<?php bloginfo("template_url");?>/images/ss-amanda-demo.jpg" alt="" />
               </div>
             </a>
           </div>
@@ -211,7 +116,7 @@
               <h4>銘柄別投資額割合<br />取引一覧・銘柄一覧</h4>
               <h5>Nextjs TypeScript<br />TailwindCSS Prisma</h5>
               <div class="img">
-                <img src="images/ss-usstocktradedashboard.png" alt="" />
+                <img src="<?php bloginfo("template_url");?>/images/ss-usstocktradedashboard.png" alt="" />
               </div>
             </a>
           </div>
@@ -221,7 +126,7 @@
               <h4>個別銘柄ローソク足チャート<br />VIXやWTIなど</h4>
               <h5>Python Streamlit</h5>
               <div class="img">
-                <img src="images/ss-usstockchartlite.jpg" alt="" />
+                <img src="<?php bloginfo("template_url");?>/images/ss-usstockchartlite.jpg" alt="" />
               </div>
             </a>
           </div>
@@ -234,7 +139,7 @@
               <h4>日本株投資をスムーズにするひとことメモ</h4>
               <h5>Flutter - iPhone & Android</h5>
               <div class="img">
-                <img src="images/ss-jpstockminimemo.png" alt="" />
+                <img src="<?php bloginfo("template_url");?>/images/ss-jpstockminimemo.png" alt="" />
               </div>
             </a>
           </div>
@@ -244,7 +149,7 @@
               <h4>米国株投資をスムーズにするひとことメモ</h4>
               <h5>Flutter - iPhone & Android</h5>
               <div class="img">
-                <img src="images/ss-usstockminimemo.png" alt="" />
+                <img src="<?php bloginfo("template_url");?>/images/ss-usstockminimemo.png" alt="" />
               </div>
             </a>
           </div>
@@ -300,36 +205,4 @@
         </form> -->
       </section>
     </main>
-    <footer id="footer" class="footer">
-      <div class="footer_main">
-        <nav>
-          <ul id="footer_menu" class="footer_menu">
-            <li>
-              <a href="https://twitter.com/arafipro" target="_blank">
-                <img src="images/logo-twitter.svg" alt="" />
-              </a>
-            </li>
-            <li>
-              <a href="https://zenn.dev/arafipro" target="_blank">
-                <img src="images/logo-zenn.svg" alt="" />
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <a href="pages/site_privacy.html" target="_blank">
-          プライバシーポリシー
-        </a>
-        <!-- <a href="policies/moblie_privacy.html" target="_blank">
-          mobileプライバシーポリシー
-        </a> -->
-      </div>
-      <div class="footer_credit">
-        <p> © 2023 Copyright MarginSaltDeveloper </p>
-      </div>
-    </footer>
-    <a href="#" class="scrollup" id="scrollup">
-      <i class="ri-arrow-up-s-line scrollup_icon"></i>
-    </a>
-    <script src="js/main.js"></script>
-  </body>
-</html>
+		<?php get_footer();?>
