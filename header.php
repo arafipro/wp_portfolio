@@ -29,7 +29,7 @@
       content="streamlit,ポートフォリオ,html,css,sass,wordpress,ts,react,nextjs,vue,tailwind,python,django,php,laravel,dart,flutter,git,github,vscode,figma,mysql,sqlite"
     />
     <!-- SEO対策 終了-->
-    <link rel="stylesheet" href="<?php bloginfo("template_url");?>/css/style.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -58,7 +58,7 @@
       <div id="header_main">
         <h1>
           <a href="#">
-            <img src="<?php bloginfo("template_url");?>/images/logo_black.png" alt="" />
+            <img src="<?php echo get_template_directory_uri();?>/images/logo_black.png" alt="" />
           </a>
         </h1>
         <nav>
@@ -87,7 +87,7 @@
         </div>
       </div>
       <div class="header_content">
-        <img src="<?php bloginfo("template_url");?>/images/human.png" alt="" />
+        <img src="<?php echo get_template_directory_uri();?>/images/human.png" alt="" />
         <p>
           <span>Wellcome to My Portfolio</span>
           <br />
