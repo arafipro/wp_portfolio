@@ -3,7 +3,7 @@
       <section id="about" class="about jump_point">
         <h2>About</h2>
         <div>
-          <img src="<?php bloginfo("template_url");?>/images/human.png" alt="" />
+          <img src="<?php echo get_template_directory_uri();?>/images/human.png" alt="" />
           <p>
             ポートフォリオサイトをご覧いただきありがとうございます。<br />
             はじめまして、Hiroki Chiyodaと申します。
@@ -73,7 +73,7 @@
               <h4>当ポートフォリオサイト</h4>
               <h5>HTML CSS SASS JavaScript</h5>
               <div class="img">
-                <img src="<?php bloginfo("template_url");?>/images/ss-portfolio.jpg" alt="" />
+                <img src="<?php echo get_template_directory_uri();?>/images/ss-portfolio.jpg" alt="" />
               </div>
             </a>
           </div>
@@ -83,7 +83,7 @@
               <h4>ひとこと投資メモを紹介するLPサイト</h4>
               <h5>HTML CSS</h5>
               <div class="img">
-                <img src="<?php bloginfo("template_url");?>/images/ss-jpstockminimemoLP.jpg" alt="" />
+                <img src="<?php echo get_template_directory_uri();?>/images/ss-jpstockminimemoLP.jpg" alt="" />
               </div>
             </a>
           </div>
@@ -93,7 +93,7 @@
               <h4>ひとこと投資メモを紹介するLPサイト</h4>
               <h5>HTML CSS</h5>
               <div class="img">
-                <img src="<?php bloginfo("template_url");?>/images/ss-usstockminimemoLP.jpg" alt="" />
+                <img src="<?php echo get_template_directory_uri();?>/images/ss-usstockminimemoLP.jpg" alt="" />
               </div>
             </a>
           </div>
@@ -103,7 +103,7 @@
               <h4>Figmaのデザインカンプから<br />コーディングのサンプル</h4>
               <h5>HTML CSS SASS Figma</h5>
               <div class="img">
-                <img src="<?php bloginfo("template_url");?>/images/ss-amanda-demo.jpg" alt="" />
+                <img src="<?php echo get_template_directory_uri();?>/images/ss-amanda-demo.jpg" alt="" />
               </div>
             </a>
           </div>
@@ -116,7 +116,7 @@
               <h4>銘柄別投資額割合<br />取引一覧・銘柄一覧</h4>
               <h5>Nextjs TypeScript<br />TailwindCSS Prisma</h5>
               <div class="img">
-                <img src="<?php bloginfo("template_url");?>/images/ss-usstocktradedashboard.png" alt="" />
+                <img src="<?php echo get_template_directory_uri();?>/images/ss-usstocktradedashboard.png" alt="" />
               </div>
             </a>
           </div>
@@ -126,7 +126,7 @@
               <h4>個別銘柄ローソク足チャート<br />VIXやWTIなど</h4>
               <h5>Python Streamlit</h5>
               <div class="img">
-                <img src="<?php bloginfo("template_url");?>/images/ss-usstockchartlite.jpg" alt="" />
+                <img src="<?php echo get_template_directory_uri();?>/images/ss-usstockchartlite.jpg" alt="" />
               </div>
             </a>
           </div>
@@ -139,7 +139,7 @@
               <h4>日本株投資をスムーズにするひとことメモ</h4>
               <h5>Flutter - iPhone & Android</h5>
               <div class="img">
-                <img src="<?php bloginfo("template_url");?>/images/ss-jpstockminimemo.png" alt="" />
+                <img src="<?php echo get_template_directory_uri();?>/images/ss-jpstockminimemo.png" alt="" />
               </div>
             </a>
           </div>
@@ -149,7 +149,7 @@
               <h4>米国株投資をスムーズにするひとことメモ</h4>
               <h5>Flutter - iPhone & Android</h5>
               <div class="img">
-                <img src="<?php bloginfo("template_url");?>/images/ss-usstockminimemo.png" alt="" />
+                <img src="<?php echo get_template_directory_uri();?>/images/ss-usstockminimemo.png" alt="" />
               </div>
             </a>
           </div>
