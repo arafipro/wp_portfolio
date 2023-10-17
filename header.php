@@ -29,14 +29,9 @@
       content="streamlit,ポートフォリオ,html,css,sass,wordpress,ts,react,nextjs,vue,tailwind,python,django,php,laravel,dart,flutter,git,github,vscode,figma,mysql,sqlite"
     />
     <!-- SEO対策 終了-->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
     <title>ARAFIPRO</title>
     <!-- Google tag (gtag.js) -->
-    <script
+    <!-- <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-TG1DR49E5G"
     ></script>
@@ -48,7 +43,7 @@
       gtag("js", new Date());
 
       gtag("config", "G-TG1DR49E5G");
-    </script>
+    </script> -->
 		<?php wp_head(); ?>
   </head>
   <body>
