@@ -24,11 +24,10 @@
       <div class="footer_credit">
         <p> © 2023 Copyright MarginSaltDeveloper </p>
       </div>
+			<a href="#" class="scrollup" id="scrollup">
+				<i class="ri-arrow-up-s-line scrollup_icon"></i>
+			</a>
     </footer>
 		<?php wp_footer(); ?>
-    <a href="#" class="scrollup" id="scrollup">
-      <i class="ri-arrow-up-s-line scrollup_icon"></i>
-    </a>
-    <script src="<?php echo get_template_directory_uri();?>/js/main.js"></script>
   </body>
 </html>
